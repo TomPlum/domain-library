@@ -27,7 +27,11 @@ Currently contains the following;
 > direct construction muddies the design of the client, breaches encapsulation of the assembled object or **Aggregate**, and 
 > overly couples the client to the implementation of the created object.
 
-* Repository
+## [Repository](https://github.com/TomPlum/domain-library/blob/3bd71f78b0da7dfbd5cef07ac952263daeab106f/src/main/java/com/domain/Repository.java#L3-L15)
+> Associations allow us to find an object based on its relationship to another. But we must have a starting point for a traversal of an **Entity** or **Value** in the middle of its life-cycle.
+
+> For each type of object that needs global access, create an object that can provide the illusion of an in-memory collection of all objects of that type. Set up access through a well-known global interface. Provide methods to add and remove objects, which will encapsulate the actual insertion or removal of data in the data store. Provide methods that select objects based on some criteria and return fully instanitated objects or collections of objects whose attribute values meet the criteria, thereby encapsulating the actual storage and query technology. Provide **Repositories** only for **Aggregate** roots that actually need direct access. Keep the client focused on the model, delegating all object storage and access to the **Repositories**.
+
 * Service
 * ValueObject
 * SingleValueObject
