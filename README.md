@@ -25,6 +25,13 @@ Currently contains the following;
 
 > For each type of object that needs global access, create an object that can provide the illusion of an in-memory collection of all objects of that type. Set up access through a well-known global interface. Provide methods to add and remove objects, which will encapsulate the actual insertion or removal of data in the data store. Provide methods that select objects based on some criteria and return fully instanitated objects or collections of objects whose attribute values meet the criteria, thereby encapsulating the actual storage and query technology. Provide **Repositories** only for **Aggregate** roots that actually need direct access. Keep the client focused on the model, delegating all object storage and access to the **Repositories**.
 
-* Service
+## [Service](https://github.com/TomPlum/domain-library/blob/ddd6f37852c1f799a8b284df9b84c36c9ba54e01/src/main/java/com/domain/Service.java#L3-L4)
+> Sometimes, it just isn't a thing. In some cases, the clearest and most pragmatic design includes operations that do not conceptually belong to any object. Rather than force the issues, we can follow the natural contours of the problem space and include **Services** explicitly in the model.
+
+> A good **Serivce** has three characteristics;
+> 1. The operation relates to a domain concept that is not a natural part of an **Entity** or **Value Object**.
+> 2. The interface is defined in terms of other elements of the domain model.
+> 3. The operation is stateless.
+
 * ValueObject
 * SingleValueObject
