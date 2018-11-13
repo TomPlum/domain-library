@@ -6,7 +6,7 @@ repositories {
 }
 
 group = 'com.project-omega.domain-library'
-version = '0.0.1-SNAPSHOT'
+version = '1.0.0'
 sourceCompatibility = 1.9
 targetCompatibility = 1.9
 
