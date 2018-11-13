@@ -35,3 +35,5 @@ Currently contains the following;
 
 * ValueObject
 * SingleValueObject
+
+*All definitions quoted from Domain-Driven Design: Tackling Complexity in the Heart of Software, by Eric J. Evans.*
