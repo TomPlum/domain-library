@@ -19,7 +19,14 @@ Currently contains the following;
 > Some objects are not defined pimrarily by their attributes. They represent a thread of identity that runs through time and often > across distinct representations. Sometimes such an object must be matched with another object even though attributes differ. An 
 > object must be distinguished from other objects even though they might have the same attributes. Mistaken identity can lead to
 > data corruption.
-* Factory
+
+## [Factory](https://github.com/TomPlum/domain-library/blob/3e56749dcb6f95c0bc21a1ab5eb5a12fbd274ba4/src/main/java/com/domain/Factory.java#L3-L7)
+> When the creation of an object, or an entire **Aggregate**, becomes complicated or reveals too much of the internal structure, **Factories** provide encapsulation.
+
+> Creation of an object can be a major operation in itself, but complex assembly operations do not fit the responsibility of the > created objects. Combining such responsiblities can produce ungainly designs that are hard to understand. Making the client 
+> direct construction muddies the design of the client, breaches encapsulation of the assembled object or **Aggregate**, and 
+> overly couples the client to the implementation of the created object.
+
 * Repository
 * Service
 * ValueObject
