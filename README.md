@@ -10,10 +10,15 @@ Currently contains the following;
 > An **Aggregate** is a cluster of associated objects that we treat as a unit for the purpose of data changes. Each **Aggregate** 
 > has a root and a boundary. The boundary defines what is inside the **Aggregate**. The root is a single, specific **Entity**
 > contained in the **Aggregate**. The root is the only member of the **Aggregate** that outside objects are allowed to hold 
-> references to, although objects within the boundary may hold references to each other. *-Eric J. Evans*.
+> references to, although objects within the boundary may hold references to each other.
 
 
-* Entity
+## [Entity](https://github.com/TomPlum/domain-library/blob/165b5b7a1f31e458d18fea9dc5e6633a3ad1f5b0/src/main/java/com/domain/Entity.java#L3-L9) (A.K.A Reference Objects)
+> Many objects are not fundamentally defined by their attributes, but rather by a thread of continuity and identity.
+
+> Some objects are not defined pimrarily by their attributes. They represent a thread of identity that runs through time and often > across distinct representations. Sometimes such an object must be matched with another object even though attributes differ. An 
+> object must be distinguished from other objects even though they might have the same attributes. Mistaken identity can lead to
+> data corruption.
 * Factory
 * Repository
 * Service
