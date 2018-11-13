@@ -12,5 +12,5 @@ targetCompatibility = 1.9
 
 
 dependencies {
-
+	compile("org.apache.commons:commons-lang3:3.8.1")
 }
