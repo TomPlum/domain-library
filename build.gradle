@@ -9,7 +9,7 @@ repositories {
 }
 
 group = 'com.github.TomPlum'
-version = '1.0.0'
+version = '1.0.1'
 sourceCompatibility = 1.9
 targetCompatibility = 1.9
 
