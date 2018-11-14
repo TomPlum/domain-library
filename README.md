@@ -3,14 +3,12 @@ A library containing marker interfaces for Domain-Driven Design elements.
 
 [![](https://jitpack.io/v/TomPlum/domain-library.svg)](https://jitpack.io/#TomPlum/domain-library)
 
-
 See [Domain-Driven Design Template](https://github.com/TomPlum/domain-driven-design-template) for an IntelliJ IDEA template project with a layered-arcitechture structure using Gradle modules.
 
 The library currently contains the following Domain-Driven Design marker interfaces;
 
 ## [Aggregate](https://github.com/TomPlum/domain-library/blob/26e2faf3ea0dd842d7c365959374801dd4defe73/src/main/java/com/domain/Aggregate.java#L3-L9)
 > An **Aggregate** is a cluster of associated objects that we treat as a unit for the purpose of data changes. Each **Aggregate** has a root and a boundary. The boundary defines what is inside the **Aggregate**. The root is a single, specific **Entity** contained in the **Aggregate**. The root is the only member of the **Aggregate** that outside objects are allowed to hold references to, although objects within the boundary may hold references to each other.
-
 
 ## [Entity](https://github.com/TomPlum/domain-library/blob/165b5b7a1f31e458d18fea9dc5e6633a3ad1f5b0/src/main/java/com/domain/Entity.java#L3-L9) (A.K.A Reference Objects)
 > Many objects are not fundamentally defined by their attributes, but rather by a thread of continuity and identity.
