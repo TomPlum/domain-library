@@ -6,7 +6,7 @@ A library containing marker interfaces for Domain-Driven Design elements.
 
 See [Domain-Driven Design Template](https://github.com/TomPlum/domain-driven-design-template) for an IntelliJ IDEA template project with a layered-arcitechture structure using Gradle modules.
 
-Currently contains the following;
+The library currently contains the following Domain-Driven Design marker interfaces;
 
 ## [Aggregate](https://github.com/TomPlum/domain-library/blob/26e2faf3ea0dd842d7c365959374801dd4defe73/src/main/java/com/domain/Aggregate.java#L3-L9)
 > An **Aggregate** is a cluster of associated objects that we treat as a unit for the purpose of data changes. Each **Aggregate** has a root and a boundary. The boundary defines what is inside the **Aggregate**. The root is a single, specific **Entity** contained in the **Aggregate**. The root is the only member of the **Aggregate** that outside objects are allowed to hold references to, although objects within the boundary may hold references to each other.
@@ -30,12 +30,13 @@ Currently contains the following;
 ## [Service](https://github.com/TomPlum/domain-library/blob/ddd6f37852c1f799a8b284df9b84c36c9ba54e01/src/main/java/com/domain/Service.java#L3-L4)
 > Sometimes, it just isn't a thing. In some cases, the clearest and most pragmatic design includes operations that do not conceptually belong to any object. Rather than force the issues, we can follow the natural contours of the problem space and include **Services** explicitly in the model.
 
-> A good **Serivce** has three characteristics;
+> A good **Service** has three characteristics;
 > 1. The operation relates to a domain concept that is not a natural part of an **Entity** or **Value Object**.
 > 2. The interface is defined in terms of other elements of the domain model.
 > 3. The operation is stateless.
 
-* ValueObject
-* SingleValueObject
+## [ValueObject](https://github.com/TomPlum/domain-library/blob/bb60f59e0bf56a0955d4f28679767ad30873468e/src/main/java/com/domain/ValueObject.java#L3-L4)
+> Many objects have no conceptual identity. These objects describe some characteristic of a thing.
+> When you care only about the attributes of an element of the model, classify it as a **Value Object**. Make it express the meaning of the attributes it conveys and give it related functionality. Treat the **Value Object** as immutable. Don't give it any identity and avoid the design complexities necessary to maintain **Entities**.
 
-*All definitions quoted from Domain-Driven Design: Tackling Complexity in the Heart of Software, by Eric J. Evans.*
+*All definitions are quoted from 'Domain-Driven Design: Tackling Complexity in the Heart of Software', by Eric J. Evans.*
