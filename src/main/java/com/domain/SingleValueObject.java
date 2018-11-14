@@ -9,7 +9,7 @@ import org.apache.commons.lang3.builder.HashCodeBuilder;
  * @see ValueObject
  */
 public abstract class SingleValueObject<V> implements ValueObject {
-    private final V value;
+    protected final V value;
 
     public SingleValueObject(V value) {
         this.value = value;
