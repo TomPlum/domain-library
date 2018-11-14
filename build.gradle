@@ -1,11 +1,12 @@
 apply plugin: 'java'
 apply plugin: 'idea'
+apply plugin: 'maven'
 
 repositories {
 	mavenCentral()
 }
 
-group = 'com.project-omega.domain-library'
+group = 'com.github.tomplum'
 version = '1.0.0'
 sourceCompatibility = 1.9
 targetCompatibility = 1.9
