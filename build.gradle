@@ -1,19 +1,46 @@
 apply plugin: 'java'
 apply plugin: 'idea'
 apply plugin: 'maven'
+apply plugin: 'maven-publish'
 
 repositories {
 	mavenCentral()
-    jcenter()
-    maven { url "https://jitpack.io" }
 }
 
 group = 'com.github.TomPlum'
-version = '1.0.1'
+version = '1.1.0'
 sourceCompatibility = 1.9
 targetCompatibility = 1.9
 
-
 dependencies {
 	compile("org.apache.commons:commons-lang3:3.8.1")
+}
+
+task sourcesJar(type: Jar, dependsOn: classes) {
+    classifier = 'sources'
+    from sourceSets.main.allSource
+}
+
+task javadocJar(type: Jar, dependsOn: javadoc) {
+    classifier = 'javadoc'
+    from javadoc.destinationDir
+}
+
+artifacts {
+    archives sourcesJar
+    archives javadocJar
+}
+
+install {
+    repositories.mavenInstaller {
+        pom.project {
+            licenses {
+                license {
+                    name 'The Apache Software License, Version 2.0'
+                    url 'http://www.apache.org/licenses/LICENSE-2.0.txt'
+                    distribution 'repo'
+                }
+            }
+        }
+    }
 }
