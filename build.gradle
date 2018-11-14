@@ -8,9 +8,9 @@ repositories {
 }
 
 group = 'com.github.TomPlum'
-version = '1.1.0'
-sourceCompatibility = 1.9
-targetCompatibility = 1.9
+version = '1.1.1'
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
 
 dependencies {
 	compile("org.apache.commons:commons-lang3:3.8.1")
