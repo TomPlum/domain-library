@@ -6,7 +6,7 @@ repositories {
 	mavenCentral()
 }
 
-group = 'com.github.tomplum'
+group = 'com.github.TomPlum'
 version = '1.0.0'
 sourceCompatibility = 1.9
 targetCompatibility = 1.9
