@@ -4,7 +4,7 @@ import org.apache.commons.lang3.builder.EqualsBuilder;
 import org.apache.commons.lang3.builder.HashCodeBuilder;
 
 /**
- * A ValueObject that has a single value, of a specified generic data type.
+ * A {@link ValueObject} that has a single value, of a specified generic data type.
  *
  * @author Thomas Plumpton
  * @param <V> Value Data Type

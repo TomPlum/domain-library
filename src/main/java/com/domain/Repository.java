@@ -4,7 +4,7 @@ package com.domain;
  * Responsible for CRUD (Create, Read, Update Delete) operations of Aggregates that have uniquely identifying key values.
  *
  * Associations allow us to find an object based on its relationship to another. But we must have a starting point for
- * a traversal of an **Entity** or **Value** in the middle of its life-cycle.
+ * a traversal of an {@link Entity} or **Value** in the middle of its life-cycle.
  *
  * For each type of object that needs global access, create an object that can provide the illusion of an in-memory
  * collection of all objects of that type. Set up access through a well-known global interface. Provide methods to add
@@ -13,7 +13,7 @@ package com.domain;
  * Provide methods that select objects based on some criteria and return fully instantiated objects or collections of
  * objects whose attribute values meet the criteria, thereby encapsulating the actual storage and query technology.
  *
- * Provide **Repositories** only for **Aggregate** roots that actually need direct access. Keep the client focused on
+ * Provide **Repositories** only for {@link Aggregate} roots that actually need direct access. Keep the client focused on
  * the model, delegating all object storage and access to the **Repositories**.
  *
  * @author Thomas Plumpton
