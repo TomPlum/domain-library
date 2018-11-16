@@ -1,7 +1,10 @@
 # Domain Library
-A library containing marker interfaces for Domain-Driven Design elements.
 
 [![](https://jitpack.io/v/TomPlum/domain-library.svg)](https://jitpack.io/#TomPlum/domain-library)
+[![GitHub Issues](https://img.shields.io/github/issues/TomPlum/domain-library.svg)](https://github.com/TomPlum/domain-library/issues)
+[![GitHub license](https://img.shields.io/github/license/TomPlum/domain-library.svg)](https://github.com/TomPlum/domain-library/blob/master/LICENSE)
+
+A library containing marker interfaces for Domain-Driven Design elements.
 
 See [Domain-Driven Design Template](https://github.com/TomPlum/domain-driven-design-template) for an IntelliJ IDEA template project with a layered-architecture structure using Gradle modules.
 
