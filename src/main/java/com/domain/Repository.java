@@ -4,7 +4,7 @@ package com.domain;
  * Responsible for CRUD (Create, Read, Update Delete) operations of Aggregates that have uniquely identifying key values.
  *
  * Associations allow us to find an object based on its relationship to another. But we must have a starting point for
- * a traversal of an {@link Entity} or **Value** in the middle of its life-cycle.
+ * a traversal of an {@link Entity} or {@link ValueObject} in the middle of its life-cycle.
  *
  * For each type of object that needs global access, create an object that can provide the illusion of an in-memory
  * collection of all objects of that type. Set up access through a well-known global interface. Provide methods to add
@@ -20,6 +20,8 @@ package com.domain;
  * @param <K> Key
  * @param <A> Value (Aggregate)
  * @see Aggregate
+ * @see Entity
+ * @see ValueObject
  */
 public interface Repository<K, A extends Aggregate<?>> {
     /**
