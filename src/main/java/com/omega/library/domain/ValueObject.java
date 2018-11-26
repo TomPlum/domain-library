@@ -1,4 +1,4 @@
-package com.domain;
+package com.omega.library.domain;
 
 /**
  * Many objects have no conceptual identity. These objects describe some characteristic of a thing.

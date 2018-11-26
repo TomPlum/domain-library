@@ -1,4 +1,4 @@
-package com.domain;
+package com.omega.library.domain;
 
 /**
  * When the creation of an object, or an entire {@link Aggregate}, becomes complicated or reveals too much of the internal

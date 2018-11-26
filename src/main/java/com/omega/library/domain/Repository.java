@@ -1,4 +1,4 @@
-package com.domain;
+package com.omega.library.domain;
 
 /**
  * Responsible for CRUD (Create, Read, Update Delete) operations of Aggregates that have uniquely identifying key values.

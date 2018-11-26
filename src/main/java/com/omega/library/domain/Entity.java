@@ -1,4 +1,4 @@
-package com.domain;
+package com.omega.library.domain;
 
 /**
  *  Many objects are not fundamentally defined by their attributes, but rather by a thread of continuity and identity.

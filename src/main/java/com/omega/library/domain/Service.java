@@ -1,4 +1,4 @@
-package com.domain;
+package com.omega.library.domain;
 
 /**
  * Sometimes, it just isn't a thing. In some cases, the clearest and most pragmatic design includes operations that do

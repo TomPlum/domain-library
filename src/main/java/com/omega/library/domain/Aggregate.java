@@ -1,4 +1,4 @@
-package com.domain;
+package com.omega.library.domain;
 
 /**
  * An {@link Aggregate} is a cluster of associated objects that we treat as a unit for the purpose of data changes.
